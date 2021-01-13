@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.84" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #231b26;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane opacity="0.5" prefHeight="43.0" prefWidth="400.0">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="222.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather Application " textAlignment="RIGHT">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="54.0" prefHeight="647.0" prefWidth="400.0">
+         <children>
+            <AnchorPane layoutY="604.0" prefHeight="43.0" prefWidth="400.0">
+               <children>
+                  <ImageView fx:id="switchTheme" fitHeight="29.0" fitWidth="31.0" layoutX="365.0" layoutY="13.0" onMouseClicked="#switchTheme" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/D:/develop/WeatherApp/src/sample/half-moon.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#aeaaaa" fontSmoothingType="LCD" layoutX="180.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2021" textAlignment="CENTER">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
