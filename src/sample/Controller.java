@@ -1,5 +1,6 @@
 package sample;
 
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,19 +9,21 @@ import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Background;
 import javafx.scene.text.Text;
 import org.json.JSONObject;
+import javafx.scene.layout.AnchorPane;
 
 public class Controller {
+
+    @FXML
+    private AnchorPane mainPanel;
 
     @FXML
     private ResourceBundle resources;
 
     @FXML
     private URL location;
-
-    @FXML
-    private ImageView switchTheme;
 
     @FXML
     private Text cityName;
@@ -58,7 +61,7 @@ public class Controller {
     private static String getData() {
         StringBuilder content = new StringBuilder();
         try {
-            URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=Drochia&appid=5dfbc1c91fc61457629e0d4e30513742");
+            URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=Balti&appid=5dfbc1c91fc61457629e0d4e30513742");
             URLConnection urlConn = url.openConnection();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConn.getInputStream()));
             String line;
@@ -72,10 +75,5 @@ public class Controller {
             e.printStackTrace();
         }
         return content.toString();
-    }
-
-    @FXML
-    void switchTheme() {
-
     }
 }
