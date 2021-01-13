@@ -6,7 +6,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.84" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #231b26;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <AnchorPane opacity="0.5" prefHeight="43.0" prefWidth="400.0">
@@ -18,7 +17,7 @@
             </Text>
          </children>
       </AnchorPane>
-      <AnchorPane layoutY="54.0" prefHeight="647.0" prefWidth="400.0">
+      <AnchorPane layoutY="53.0" prefHeight="647.0" prefWidth="400.0">
          <children>
             <AnchorPane layoutY="604.0" prefHeight="43.0" prefWidth="400.0">
                <children>
@@ -30,6 +29,45 @@
                   <Text fill="#aeaaaa" fontSmoothingType="LCD" layoutX="180.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2021" textAlignment="CENTER">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text fx:id="cityName" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MD">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutY="57.0" prefHeight="309.0" prefWidth="400.0">
+               <children>
+                  <Text fx:id="weatherCondition" layoutX="181.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MD" textAlignment="CENTER" AnchorPane.rightAnchor="180.70654296875" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="weatherDescription" layoutX="189.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MD" textAlignment="CENTER" AnchorPane.rightAnchor="188.02392578125" AnchorPane.topAnchor="29.13525390625">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="temperature" layoutX="14.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature" textAlignment="CENTER">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="temperatureText" layoutX="181.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="humidity" layoutX="14.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Humidity" textAlignment="CENTER">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="humidityText" layoutX="181.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="25.0" />
                      </font>
                   </Text>
                </children>
